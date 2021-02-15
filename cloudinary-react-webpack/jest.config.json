@@ -1,0 +1,33 @@
+{
+  "testEnvironment": "jsdom",
+  "bail": true,
+  "collectCoverageFrom": [
+    "<rootDir>/src/**/*.js"
+  ],
+  "moduleFileExtensions": [
+    "js",
+    "jsx",
+    "json",
+    "node"
+  ],
+  "modulePaths": [
+    "<rootDir>/src"
+  ],
+  "moduleDirectories": ["node_modules", "bower_components", "shared"],
+  "coverageThreshold": {
+    "global": {
+      "branches": 95,
+      "functions": 95,
+      "lines": 95,
+      "statements": 95
+    }
+  },
+  "transform": {
+    "node_modules/@cloudinary/base": "babel-jest"
+  },
+  "transformIgnorePatterns": ["/node_modules/(?!@cloudinary/base)"],
+  "testPathIgnorePatterns": [
+    "<rootDir>/__tests__/testUtils",
+    "<rootDir>/dist"
+  ]
+}
