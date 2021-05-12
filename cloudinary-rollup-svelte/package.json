@@ -19,8 +19,8 @@
   },
   "dependencies": {
     "@cloudinary/base": "^1.0.0-beta.3",
-    "@cloudinary/html": "^1.0.0-beta.6",
-    "@cloudinary/svelte": "^1.0.0-beta.6",
+    "@cloudinary/html": "^1.0.0-beta.8",
+    "@cloudinary/svelte": "^1.0.0-beta.8",
     "@rollup/plugin-json": "^4.1.0",
     "lodash": "^4.17.21",
     "sirv-cli": "^1.0.0"
