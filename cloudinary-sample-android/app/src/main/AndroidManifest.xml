@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CloudinarySampleAppAndroid">
-        <meta-data android:name="CLOUDINARY_URL" android:value="cloudinary://117682269726797:e49pQnmbp_wu-j5XGIvv8u5Teio@adimizrahi2"/>
+        <meta-data android:name="CLOUDINARY_URL" android:value="cloudinary://<API_KEY>:<API_SECRET>@<CLOUD_NAME>"/>
         <activity
             android:name=".screens.MainActivity"
             android:exported="true">
