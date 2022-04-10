@@ -14,7 +14,7 @@ implementation 'com.cloudinary:cloudinary-android:2.1.0'
 
 ### Setup
 
-Make sure to populate `CLOUDINARY_URL` field in `AndroidManifest.xml`
+Make sure to populate `API_KEY`, `API_SECRET` and `CLOUD_NAME` fields in `AndroidManifest.xml`
 
 ### Upload
 
