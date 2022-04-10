@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6000D242802AC6E003C4701 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B6DE206C27FC2CF800BAA65F /* CloudinarySampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudinarySampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DE206F27FC2CF800BAA65F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6DE207127FC2CF800BAA65F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 				B6DE207527FC2CF800BAA65F /* Main.storyboard */,
 				B6DE207827FC2CFA00BAA65F /* Assets.xcassets */,
 				B6DE207A27FC2CFA00BAA65F /* LaunchScreen.storyboard */,
+				B6000D242802AC6E003C4701 /* README.md */,
 				B6DE207D27FC2CFA00BAA65F /* Info.plist */,
 			);
 			path = CloudinarySampleApp;
