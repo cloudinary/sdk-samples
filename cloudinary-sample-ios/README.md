@@ -22,7 +22,8 @@ Make sure to populate `API_KEY`, `API_SECRET` and `CLOUD_NAME` in `CloudinaryHel
 
 The following example for upload to cloud can be found in `CloudinaryHelper` class:
 
-``` cloudinary.createUploader().signedUpload(data: data, params: params, completionHandler: { response, error in
+``` 
+cloudinary.createUploader().signedUpload(data: data, params: params, completionHandler: { response, error in
     ...
     }
 ```
@@ -31,7 +32,8 @@ The following example for upload to cloud can be found in `CloudinaryHelper` cla
 
 The following example on how to perform transformation can be found in `CloudinaryHelper` class:
 
-```let transformation = CLDTransformation().setAngle("hflip").setEffect("cartoonify")
+```
+let transformation = CLDTransformation().setAngle("hflip").setEffect("cartoonify")
         guard let url = cloudinary.createUrl().setTransformation(transformation).generate(id) else {
             return nil
    }
