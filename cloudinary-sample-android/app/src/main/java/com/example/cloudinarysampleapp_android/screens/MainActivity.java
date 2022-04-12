@@ -12,6 +12,7 @@ import com.cloudinary.android.callback.ErrorInfo;
 import com.cloudinary.android.callback.UploadCallback;
 import com.example.cloudinarysampleapp_android.Helpers.CloudinaryHelper;
 import com.example.cloudinarysampleapp_android.R;
+import com.example.cloudinarysampleapp_android.screens.common.BaseActivity;
 
 import java.util.Map;
 
@@ -19,7 +20,7 @@ interface OnButtonClickListener {
     void onButtonClick(int buttonId);
 }
 
-public class MainActivity extends AppCompatActivity implements MainViewMvcImpl.Listener {
+public class MainActivity extends BaseActivity implements MainViewMvcImpl.Listener {
 
     MainViewMvcImpl mainViewMvcImpl;
 
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements MainViewMvcImpl.L
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mainViewMvcImpl = new MainViewMvcImpl(LayoutInflater.from(this), null);
+        mainViewMvcImpl = getCompositionRoot().getViewMvcFactory().getMainViewMvc(null);
         mainViewMvcImpl.registerListener(this);
         setContentView(mainViewMvcImpl.getRootView());
         cloudinaryHelper = new CloudinaryHelper(this);
